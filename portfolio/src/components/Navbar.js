@@ -2,10 +2,9 @@ import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
+import WorkIcon from '@material-ui/icons/Work';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,6 +30,11 @@ const Navbar = () => {
             <a href="/">
               <IconButton edge='start' className={classes.menuButton} color='secondary' aria-label='menu'>
                 <HomeIcon />
+              </IconButton>
+            </a>
+            <a href="/portfolio">
+              <IconButton color='secondary'>
+                <WorkIcon />
               </IconButton>
             </a>
           </Toolbar>
